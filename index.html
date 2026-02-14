@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCRBot - AI Automation for Luxury Real Estate</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- Fonts & Styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        /* =========================
+           General Reset & Fonts
+        ========================== */
+        * {margin:0; padding:0; box-sizing:border-box; font-family: 'Roboto', sans-serif;}
+        body {background-color:#000; color:#fff; line-height:1.6;}
+        a {color:inherit; text-decoration:none; transition:0.3s;}
+        h1,h2,h3 {font-family:'Playfair Display', serif; color:#D4AF37;}
+        .container {max-width:1200px; margin:0 auto; padding:0 20px;}
+
+        /* =========================
+           Navbar
+        ========================== */
+        nav {display:flex; justify-content:space-between; align-items:center; padding:20px 0;}
+        nav .logo {font-size:28px; font-weight:bold; color:#D4AF37;}
+        nav ul {display:flex; gap:30px; list-style:none;}
+        nav ul li {font-weight:500; cursor:pointer; transition:0.3s;}
+        nav ul li:hover {color:#b88e2e;}
+
+        /* =========================
+           Hero Section
+        ========================== */
+        .hero {display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; min-height:90vh; padding:0 20px; animation:fadeIn 1s ease;}
+        .hero h1 {font-size:56px; margin-bottom:20px; opacity:0; animation:fadeInText 1s forwards 0.3s;}
+        .hero p {font-size:20px; max-width:700px; margin-bottom:40px; color:#fff; opacity:0; animation:fadeInText 1s forwards 0.6s;}
+        .hero a {padding:15px 35px; background:#D4AF37; color:#000; font-weight:bold; border-radius:8px; transition:0.3s;}
+        .hero a:hover {background:#b88e2e; transform:scale(1.05);}
+
+        /* =========================
+           Sections
+        ========================== */
+        section {padding:80px 0;}
+        section h2 {text-align:center; font-size:42px; margin-bottom:40px; opacity:0; animation:fadeInText 1s forwards;}
+        section p {text-align:center; font-size:18px; max-width:800px; margin:0 auto 40px;}
+
+        /* =========================
+           Services Grid
+        ========================== */
+        .services {display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:30px;}
+        .service-card {background:#111; padding:30px; border-radius:12px; text-align:center; transition:0.4s;}
+        .service-card:hover {background:#1a1a1a; transform:translateY(-5px);}
+        .service-card h3 {font-size:24px; margin-bottom:15px; color:#D4AF37;}
+        .service-card p {font-size:16px; color:#fff;}
+
+        /* =========================
+           CTA Section
+        ========================== */
+        .cta {background:#111; text-align:center; padding:60px 20px;}
+        .cta h2 {font-size:36px; margin-bottom:20px; color:#D4AF37;}
+        .cta a {padding:15px 35px; background:#D4AF37; color:#000; font-weight:bold; border-radius:8px; transition:0.3s;}
+        .cta a:hover {background:#b88e2e; transform:scale(1.05);}
+
+        /* =========================
+           Contact Section
+        ========================== */
+        #contact p a:hover {color:#D4AF37;}
+
+        /* =========================
+           Footer
+        ========================== */
+        footer {background:#111; text-align:center; padding:40px 20px; font-size:14px; color:#aaa;}
+
+        /* =========================
+           Animations
+        ========================== */
+        @keyframes fadeIn {from {opacity:0;} to {opacity:1;}}
+        @keyframes fadeInText {from {opacity:0; transform:translateY(20px);} to {opacity:1; transform:translateY(0);}}
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="container">
+        <div class="logo">MCRBot</div>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Luxury Real Estate. Powered by Intelligent AI.</h1>
+        <p>We build elite AI voice assistants and automation systems that capture, qualify, and convert every high-value lead for Dubai and USA luxury property agencies.</p>
+        <a href="#contact">Schedule a Strategy Call</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container">
+        <h2>About MCRBot</h2>
+        <p>MCRBot is a premium AI automation agency founded by Maheshwar Chandra Roy. We specialize in designing intelligent voice assistants and high-conversion automation systems tailored exclusively for luxury real estate firms in Dubai and the USA. Our systems ensure no high-value inquiry is ever missed — day or night.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="container">
+        <h2>Our Services</h2>
+        <div class="services">
+            <div class="service-card">
+                <h3>AI Voice Receptionist</h3>
+                <p>Never miss a luxury property inquiry again. Intelligent responses for all leads, 24/7.</p>
+            </div>
+            <div class="service-card">
+                <h3>Lead Qualification Automation</h3>
+                <p>Instantly filter serious buyers from casual inquiries with AI-driven precision.</p>
+            </div>
+            <div class="service-card">
+                <h3>CRM & WhatsApp Automation</h3>
+                <p>Seamless follow-ups and engagement across multiple platforms with zero manual effort.</p>
+            </div>
+            <div class="service-card">
+                <h3>Appointment Booking AI</h3>
+                <p>Automatically schedule property viewings for high-ticket clients with ease.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <h2>Work With MCRBot</h2>
+        <p>Join our portfolio of elite luxury real estate agencies and experience unmatched AI-driven automation.</p>
+        <a href="#contact">Book Your Private Consultation</a>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container">
+        <h2>Contact Us</h2>
+        <p>Email: <a href="mailto:contact@mcrbot.com">contact@mcrbot.com</a> | Website: <a href="https://mcrbot.com" target="_blank">www.mcrbot.com</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2026 MCRBot. All Rights Reserved. Confidential & Private.
+    </footer>
+
+</body>
+</html>
