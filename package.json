@@ -1,0 +1,4 @@
+// package.json
+"scripts": {
+  "MCRBot-website": "echo 'No build needed for static HTML'"
+}
